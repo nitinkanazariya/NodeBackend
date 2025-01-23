@@ -1,2 +1,10 @@
 [1]=====>>>>> mongoDbCommpasConnectUrl:
    mongodb+srv://nitinkanazariya61506:<uHYYCgfrFRJyCPLO>@nodebaba.zwvtw4c.mongodb.net/
+
+[2]=====>>>>> statusCode And Details
+  200 ==>> OK { "message": "Data fetched successfully", "data": {...} }
+  201 ==>> Created { "message": "Resource created successfully", "id": "123" }
+  400 ==>> badRequest { "error": "Invalid input", "message": "Field 'email' is required" }
+  401 ==>> Unauthorized { "error": "Unauthorized", "message": "Please log in" }
+  404 ==>> Not Found { "error": "Not found", "message": "Resource does not exist" }
+  500 ==>> Internal Server Error { "error": "Internal Server Error", "message": "Something went wrong on the server" }
