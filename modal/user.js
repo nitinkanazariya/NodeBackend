@@ -19,7 +19,11 @@ const UserModal = new Mongoose.Schema({
     required: true,
     minlength: 6
   },
-})
+  token: {
+    type: String,
+  }
+
+}, { versionKey: false },)
 const USER = mongoose.model('User', UserModal, "User")
 
 module.exports = USER;
