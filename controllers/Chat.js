@@ -54,12 +54,10 @@ const getUserMessage = async (req, res) => {
       { senderId: userId, receiverId: loginUserId },
     ]
   })
-
-
-  console.log(messages);
+  // console.log(messages);
   res.status(200).json({ messages, status_code: 200 });
 
-
 }
+
 
 module.exports = { CreateNewMessage, getMessages, getUserMessage }
